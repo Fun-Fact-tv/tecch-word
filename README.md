@@ -1,0 +1,2 @@
+# tecch-word
+my first 
