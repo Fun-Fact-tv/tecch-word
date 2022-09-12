@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    /* color: whitesmoke; */
+    color: rgb(168, 168, 247);
+}
+body{
+    background-color: rgb(31, 30, 30);
+
+}
+.header{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+.nav{
+    width: 10%;
+    height: inherit;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 250%;
+    display: grid;
+    place-content: center;
+}
+.web-name{
+    width: 90%;
+    height:  inherit;
+    color: whitesmoke;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    font-family: 'Aboreto', cursive;
+    
+}
+.drop-down{
+    font-size: large;
+    z-index: 1;
+    position: absolute;
+    width: fit-content;
+    box-shadow: 3px 4px 9px 0px rgba(235,228,228,0.75);
+    border-radius: 5px;
+    min-width: 150px;
+    overflow: hidden;
+    display: none;
+    margin-top: 10vh;
+    background: rgb(84, 82, 82, 1);
+}
+.drop-down ul li{
+    display: block;
+    color: whitesmoke;
+    padding: 10px;
+    border-bottom: 2px solid #eee;
+
+}
+a{
+    font-family: 'Silkscreen', cursive;
+    /* color: whitesmoke; */
+}
+.drop-down ul li:hover{
+    background: rgb(16, 15, 15);
+}
+.a:hover{
+    color: #E2DCC8;
+    /* letter-spacing: 4px; */
+}
+.nav:hover .drop-down{
+    display: block;
+}
+main{
+    display: flex;
+    height: 50vh;
+    margin: 150px 80px -100px 80px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+.intro{
+    margin-bottom: -200px;
+    width: 50%;
+    height: 0%;
+    font-family: 'Aboreto', cursive;
+    font-size: larger;
+    display: grid;
+    position: center;
+}
+.intro2{
+    margin-bottom: -200px;
+    width: 50%;
+    height: 0%;
+    font-family: 'Aboreto', cursive;
+    text-align: justify;
+    text-justify: distribute;
+    text-indent: 10px;
+    display: grid;
+    position: center;
+}
+.image{
+    height: fit-content;
+    /* width: 100%; */
+    margin: 0 80px;
+}
+.more{
+    width: auto;
+    height: 10vh;
+    margin: 10px 80px;
+    color: whitesmoke;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    place-content: center;
+}
+.sub-more{
+    width: fit-content;
+    height: fit-content;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+}
+.sub-more:hover{
+    background: #89CFFD;
+    border: 2px solid #002B5B ;
+}
+.a2:hover{
+    color: #002B5B;
+    letter-spacing: 3px;
+}
+.section2{
+    display: flex;
+    /* height: 50vh; */
+    width: auto;
+    margin: 0 80px;
+}
+.skill{
+    width: 100%;
+    position: relative;
+    z-index: 102;
+}
+.skill h4{
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    position: relative;
+    z-index: 1;
+}
+.skill h4 span{
+    background-color: #fff;
+    color: black;
+    padding: 0 10px;
+}
+.skill h4::before, .skill h4::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: linear-gradient(to righ, #35a22c 0%, #0ea8cf 100%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: -1;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.single-skill{
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+    margin-bottom: 25px;
+}
+.single-skill span{
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: block;
+}
+.custom-progress{
+    background: #e9ecef;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    height: 5px;
+    position: relative;
+}
+.progress-bar{
+    background: linear-gradient(to righ, #35a22c 0%, #0ea8cf 100%);
+    height: 5px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.segment3{
+    margin: 0 50px;
+}
+.sub-section1{
+    width: 50%;
+}
+.sub-section2{
+    width: 50%;
+}
+input{
+    margin: 20px;
+    background-color: rgb(74, 74, 74);
+    color: whitesmoke;
+    width: 80%;
+    margin-bottom: 30px;
+}
+textarea{
+    margin: 20px;
+    background-color: rgb(74, 74, 74); 
+}
+button{
+    margin: 20px;
+    margin-bottom: 30px;
+    padding: 5px;
+    /* color: #002B5B; */
+    background-color: rgb(31, 30, 30);
+}
+button:hover{
+    background-color: rgb(168, 168, 247);
+    /* color: whitesmoke; */
+    color: rgb(74, 74, 74); 
+}
+.ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+}
